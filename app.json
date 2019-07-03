@@ -1,9 +1,9 @@
 {
   "name": "Socket-Chat-Example",
-  "description": "my first socket.io app",
-  "website": "https://github.com/socketio/chat-example",
-  "repository": "https://github.com/socketio/chat-example",
-  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "description": "socket.io chat app",
+  "website": "https://github.com/murattcan/chat-example",
+  "repository": "https://github.com/murattcan/chat-example",
+  "logo": "https://avatars2.githubusercontent.com/u/33310357?s=460&v=4",
   "success_url": "/",
   "keywords": [
     "node",
