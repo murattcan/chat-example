@@ -86,7 +86,7 @@
       <div class="header">
         Chat App
       </div>
-      <div class="messages">
+      <div id="messageListContainer" class="messages">
           <ul id="messageList"></ul>
       </div>
       <form id="chat-form" class="chat-input" action="#" onsubmit="return formsubmit()">
@@ -100,6 +100,7 @@
       var form = document.getElementById('chat-form');
       var message = document.getElementById('message');
       var messageList = document.getElementById('messageList');
+      var messageListContainer = document.getElementById('messageListContainer');
 
       function formsubmit(){
         socket.emit('chat message', message.value);
@@ -112,8 +113,7 @@
         var text = document.createTextNode(msg);
         item.appendChild(text);
         messageList.append(item);
-        messageList.scrollTop = messageList.scrollHeight;
-        console.log(messageList.scrollHeight);
+        messageListContainer.scrollTop = messageListContainer.scrollHeight;
       });
     </script>
   </body>
